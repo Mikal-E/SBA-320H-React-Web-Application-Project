@@ -1,6 +1,60 @@
 import { useState } from "react"
+import SearchBar from "./components/SearchBar"
+import ResultsList from "./components/ResultsList"
 
-/* Applied a security best practice for opening links in a new tab that I found while researching: target="_blank" rel="noopener noreferrer" */
+function App() {
+
+const [query, setQuery] = useState("")
+const [articles, setArticles] = useState([])
+const [noResults, setNoResults] = useState(false)
+
+const fetchNews = async () => {
+
+  const apiKey = import.meta.env.VITE_GNEWS_API_KEY
+  const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=en&max=10&apikey=${apiKey}`
+
+    try {
+
+      const response = await fetch(url)
+      const data = await response.json()
+
+      setArticles(data.articles || [])
+      setNoResults(true)
+      
+    } catch (error) {
+
+      console.error("Error fetching news:", error)
+      
+    }
+
+}
+
+  return (
+
+    <div className="app">
+
+      <header>
+
+        <h1>Pulse<sup>by Brief.io</sup></h1>
+
+      </header>
+
+      <main>
+
+        <SearchBar query={query} setQuery={setQuery} onSearch={fetchNews} />
+        <ResultsList articles={articles} noResults={noResults} />
+
+      </main>
+
+    </div>
+
+  )
+
+}
+
+/* Code prior to refactoring - tested to make sure API was working and data was rendering. After everything observed and functioned as expected, created ArticleCard.jsx, ResultsList.jsx, and SearchBar.jsx to refactor this code.
+
+Applied a security best practice for opening links in a new tab that I found while researching: target="_blank" rel="noopener noreferrer"
 
 function App() {
 
@@ -82,6 +136,6 @@ const fetchNews = async () => {
 
   )
 
-}
+} */
 
 export default App
