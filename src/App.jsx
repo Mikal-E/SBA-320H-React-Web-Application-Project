@@ -6,6 +6,7 @@ function App() {
 
 const [query, setQuery] = useState("")
 const [articles, setArticles] = useState([])
+const [noResults, setNoResults] = useState(false)
 
 const fetchNews = async () => {
 
@@ -20,6 +21,7 @@ const fetchNews = async () => {
       console.log(data)
 
       setArticles(data.articles || [])
+      setNoResults(true)
       
     } catch (error) {
 
@@ -45,6 +47,12 @@ const fetchNews = async () => {
       />
 
       <button onClick={fetchNews}>Search</button>
+
+      {noResults && articles.length === 0 && (
+
+        <p>No articles found. Try a different search term.</p>
+
+        )}
 
       <div className="results">
 
