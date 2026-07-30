@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+/* Applied a security best practice for opening links in a new tab that I found while researching: target="_blank" rel="noopener noreferrer" */
+
 function App() {
 
 const [query, setQuery] = useState("")
@@ -44,6 +46,29 @@ const fetchNews = async () => {
 
       <button onClick={fetchNews}>Search</button>
 
+      <div className="results">
+
+        {articles.map((article) => (
+
+          <div className="card" key={articles.url}>
+
+            {article.image && <img src={article.image} alt={article.title} />}
+
+            <h3>{article.title}</h3>
+            <p>{article.description}</p>
+            <p className="meta">
+
+              {article.source?.name} | {new Date(article.publishedAt).toLocaleDateString()}
+
+            </p>
+
+            <a href={article.url} target="_blank" rel="noopener noreferrer">Read full article</a>
+
+          </div>
+
+        ))}
+
+      </div>
 
     </div>
 
