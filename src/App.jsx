@@ -1,6 +1,7 @@
 import { useState } from "react"
 import SearchBar from "./components/SearchBar"
 import ResultsList from "./components/ResultsList"
+import pulseLogo from "./assets/pulseLogo.png"
 
 function App() {
 
@@ -35,6 +36,7 @@ const fetchNews = async () => {
 
       <header>
 
+        <img src={pulseLogo} alt="Pulse logo" className="logo"/>
         <h1>Pulse<sup>by Brief.io</sup></h1>
 
       </header>
