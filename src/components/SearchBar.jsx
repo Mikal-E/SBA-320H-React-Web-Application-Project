@@ -25,3 +25,5 @@ function SearchBar({ query, setQuery, onSearch }) {
     )
 
 }
+
+export default SearchBar
