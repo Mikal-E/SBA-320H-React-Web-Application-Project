@@ -1,0 +1,135 @@
+.search-section {
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+    margin: 40px 0;
+
+}
+
+.search-section label {
+
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-dark);
+
+}
+
+.search-section input {
+
+    padding: 10px 14px;
+    border: 1px solid var(--border-grey);
+    border-radius: 6px;
+    font-family: 14px;
+    outline: none;
+
+}
+
+.search-section input:focus {
+
+    border-color: var(--burgundy);
+
+}
+
+.search-section button {
+
+    align-self: flex-start;
+    background-color: var(--burgundy);
+    color: var(--light-grey);
+    border: 2px solid var(--brand-grey);
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.search-section button:hover {
+
+    background-color: var(--brand-grey);
+    color: var(--burgundy);
+    border: 2px solid var(--burgundy);
+
+
+}
+
+.results {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+
+}
+
+.card {
+
+    background-color: var(--white);
+    border: 1px solid var(--border-grey);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 380px;
+
+}
+
+.card img {
+
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+
+.card h3 {
+
+
+    font-size: 16px;
+    font-weight: 700px;
+    color: var(--text-dark);
+
+}
+
+.card p {
+
+    font-size: 14px;
+    color: var(--text-dark);
+
+}
+
+.card .meta {
+
+    font-size: 12px;
+    color: var(--text-muted);
+
+}
+
+.card a {
+
+    color: var(--burgundy);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.card a:hover {
+
+    text-decoration: underline;
+
+}
+
+.card p:not(.meta) {
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}

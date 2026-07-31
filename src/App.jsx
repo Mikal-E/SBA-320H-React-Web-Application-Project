@@ -2,6 +2,7 @@ import { useState } from "react"
 import SearchBar from "./components/SearchBar"
 import ResultsList from "./components/ResultsList"
 import pulseLogo from "./assets/pulse-logo.png"
+import "./App.css"
 
 function App() {
 
