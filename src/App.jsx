@@ -1,7 +1,8 @@
 import { useState } from "react"
+import Sidebar from "./components/Sidebar"
+import TopBar from "./components/TopBar"
 import SearchBar from "./components/SearchBar"
 import ResultsList from "./components/ResultsList"
-import pulseLogo from "./assets/pulse-logo.png"
 import "./App.css"
 
 function App() {
@@ -33,27 +34,30 @@ const fetchNews = async () => {
 
   return (
 
-    <div className="app">
+    <div className="app-layout">
 
-      <header>
+      <Sidebar />
 
-        <img src={pulseLogo} alt="Pulse logo" className="logo"/>
-        <h1>Pulse<sup>by Brief.io</sup></h1>
+      <div className="main-column">
 
-      </header>
+        <TopBar />
 
-      <main>
+        <main>
 
-        <SearchBar query={query} setQuery={setQuery} onSearch={fetchNews} />
-        <ResultsList articles={articles} noResults={noResults} />
+          <SearchBar query={query} setQuery={setQuery} onSearch={fetchNews} />
+          <ResultsList articles={articles} noResults={noResults} />
 
-      </main>
+        </main>
+
+      </div>
 
     </div>
 
   )
 
 }
+
+export default App
 
 /* Code prior to refactoring - tested to make sure API was working and data was rendering. After everything observed and functioned as expected, created ArticleCard.jsx, ResultsList.jsx, and SearchBar.jsx to refactor this code.
 
@@ -140,5 +144,3 @@ const fetchNews = async () => {
   )
 
 } */
-
-export default App
