@@ -1,4 +1,6 @@
-/* ArticleCard takes props instead of having its own state. States: query, articles, noResults kept in App.jsx for child components use.
+/* ArticleCard component is built for the individual article.
+
+ArticleCard takes props instead of having its own state. States: query, articles, noResults kept in App.jsx for child components use.
 
 Applied a security best practice for opening links in a new tab that I found while researching: target="_blank" rel="noopener noreferrer" */
 

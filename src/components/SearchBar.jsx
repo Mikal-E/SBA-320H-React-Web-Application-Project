@@ -1,4 +1,9 @@
-/* SearchBar takes props instead of having its own state. States: query, articles, noResults kept in App.jsx for child components use. */
+/* This is where a user can search for the news they want to see. In the future it will be tailored for market research instead of only news. It will return data sets, surveys, industry reports, etc.
+
+The placeholder text is based upon the buyer persona I created for Brief.io. Conrad is the persona and Crazy Kicks and EffervesScents are 2 client names from other Brief.io's assets. Please search any real terms as those are made up companies.
+Try Nike, France, Google, Apparel, Sneakers, etc.
+
+SearchBar takes props instead of having its own state. States: query, articles, noResults kept in App.jsx for child components use. */
 
 function SearchBar({ query, setQuery, onSearch }) {
 

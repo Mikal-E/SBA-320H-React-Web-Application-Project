@@ -1,4 +1,6 @@
-/* ResultsList takes props instead of having its own state. States: query, articles, noResults kept in App.jsx for child components use. */
+/* ResultsList displays the group of articles returned. It is the section below the top bar that has greeting and avatar.
+
+ResultsList takes props instead of having its own state. States: query, articles, noResults kept in App.jsx for child components use. */
 
 import ArticleCard from "./ArticleCard";
 

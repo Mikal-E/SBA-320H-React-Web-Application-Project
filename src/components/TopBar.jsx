@@ -1,5 +1,7 @@
 import conradAvatar from "../assets/conrad-avatar.jpg"
 
+/* This holds the greeting and the users avatar. In future iterations there will be other capabilities near the avatar. The greeting is generated based upon the time of day. */
+
 function getGreeting() {
 
         const hour = new Date().getHours()

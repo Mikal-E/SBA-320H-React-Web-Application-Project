@@ -1,3 +1,5 @@
+/* Top level container div. */
+
 .app-layout {
 
     display: flex;
@@ -5,6 +7,8 @@
     overflow: hidden;
 
 }
+
+/* The .sidebar CSS is for the panel on the left side and it's elements. */
 
 .sidebar {
 
@@ -101,6 +105,8 @@
 
 }
 
+/* .topbar adds styling the top bar and the greeting and avatar. */
+
 .top-bar {
 
     width: 100%;
@@ -130,6 +136,8 @@
 
 }
 
+/* Main CSS is the section below the top bar. */
+
 main {
 
     flex: 1;
@@ -137,6 +145,8 @@ main {
     overflow-y: auto;
 
 }
+
+/* This is the main area - everything to the right of the panel. */
 
 .main-column {
 
@@ -146,6 +156,8 @@ main {
     overflow: hidden;
 
 }
+
+/* .search CSS is for all the search elements. */
 
 .search-section {
 
@@ -226,6 +238,8 @@ main {
 
 }
 
+/* Section container for the results. */
+
 .results {
 
     display: grid;
@@ -234,6 +248,8 @@ main {
     gap: 24px;
 
 }
+
+/* .car CSS is styling for all the article elements. */
 
 .card {
 

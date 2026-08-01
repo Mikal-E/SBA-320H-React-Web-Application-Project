@@ -1,5 +1,7 @@
 import pulseLogo from "../assets/pulse-logo.png"
 
+/* The sidebar is the left panel with the logo, nav future features, settings, and log out feature.  */
+
 function Sidebar() {
 
     return (
