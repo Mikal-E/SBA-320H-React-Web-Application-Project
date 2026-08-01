@@ -19,37 +19,37 @@ function Sidebar() {
 
                     <li className="future-feature">
 
-                        <i class="fa-solid fa-lightbulb"></i>
+                        <i class="fa-solid fa-lightbulb"></i> Future Feature
 
                     </li>
 
                     <li className="future-feature">
 
-                        <i class="fa-solid fa-lightbulb"></i>
+                        <i class="fa-solid fa-lightbulb"></i> Future Feature
 
                     </li>
 
                     <li className="future-feature">
 
-                        <i class="fa-solid fa-lightbulb"></i>
+                        <i class="fa-solid fa-lightbulb"></i> Future Feature
 
                     </li>
 
                     <li className="future-feature">
 
-                        <i class="fa-solid fa-lightbulb"></i>
+                        <i class="fa-solid fa-lightbulb"></i> Future Feature
 
                     </li>
 
                     <li className="future-feature">
 
-                        <i class="fa-solid fa-lightbulb"></i>
+                        <i class="fa-solid fa-lightbulb"></i> Future Feature
 
                     </li>
 
                     <li className="future-feature">
 
-                        <i class="fa-solid fa-lightbulb"></i>
+                        <i class="fa-solid fa-lightbulb"></i> Future Feature
 
                     </li>                                                                                                    
 

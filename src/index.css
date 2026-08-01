@@ -10,7 +10,8 @@
     --text-muted: #6b6b6b;
     --white: #ffffff;
     --brand-grey: #cccccc;
-
+    --border-line: #e6e6e6;
+    --ui-paneling: #fdfdfd;
     --font-main: 'Roboto', sans-serif;
 
 }
@@ -28,13 +29,6 @@ header {
     display: flex;
     align-items: center;
     gap: 12px;
-
-}
-
-.logo {
-
-    height: 3em;
-    width: auto;
 
 }
 
